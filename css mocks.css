@@ -1,0 +1,179 @@
+/* Create a button */
+button {
+  display: inline-block;
+  margin: 20px;
+  width: 6.5em;
+  line-height: 2.5em;
+  font-size: 15px;
+  text-align: center;
+  color: white;
+  background-color: #1a73e8;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {background-color: #124a94;}
+
+button:active {
+  background-color: #124a94;
+  box-shadow: 0s;
+  transform: scale(1.02);
+}
+
+/* Create a cat card */
+
+.cat-card {
+  position: relative;
+  max-width: 350px;
+  max-height: auto;
+  display: grid;
+  object-fit: fill;
+  grid-template-rows: max-content 200px 1fr;
+  color: black;
+  background-color: rgb(238, 238, 238);
+  border-radius: 5px 5px 5px 5px;
+  box-shadow: 0px 1px 2px 1px rgba(107, 107, 107, 0.432);
+  margin: 20px;
+}
+
+.cat-card img {
+  position: relative;
+  max-width: 100%;
+  max-height: auto;
+  border-radius: 5px 5px 0 0;
+  box-shadow: 0px 0px 2px 1 rgba(107, 107, 107, 0.432);
+}
+
+hr {
+  margin: 10px -1px 15px -5px;
+  border: 0;
+  border-top: 1px solid #c9c7c7;
+}
+
+#content {
+  object-fit: cover;
+  position: relative;
+  max-width: 350px;
+  height: auto;
+  color: black;
+  font-family: 'Times New Roman', Times, serif;
+  background-color: rgb(238, 238, 238);
+  border-radius: 0 0 5px 5px;
+  top: 0%;
+  box-shadow: 0px 1px 2px 1px rgba(107, 107, 107, 0.432);
+  padding: 1px 1px 1px 5px;
+}
+
+#content p {
+  font-size: 14px;
+}
+
+/* Make some gifs with text animation on hover [Utilize flexbox, transition, and transform!] */
+
+.gif_container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.nom_gif {
+  position: relative;
+  width: 230px;
+  height: 230px;
+  border: 5px solid peachpuff;
+  border-radius: 5px;
+  margin: 20px;
+  background: url(https://media1.tenor.com/images/a592a94c5e524242627c3feb9d0b67d2/tenor.gif?itemid=4821387);
+  background-size: cover;
+  background-position: center left 35%;
+  overflow: hidden;
+  transition: transform 0.4s ease-out;
+}
+
+.nom_text {
+  position: absolute;
+  width: 230px;
+  height: 230px;
+  margin: 0;
+  border-radius: 5px;
+  background-color: rgba(10, 10, 10, 0.5);
+  color: rgb(238, 238, 238);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40pt;
+  top: 230px;
+  transition: transform 0.4s ease-out;
+}
+
+.nom_gif:hover > .nom_text {
+    transform: translateY(-230px);
+}
+
+.triangle_gif {
+  position: relative;
+  width: 230px;
+  height: 230px;
+  border: 5px solid peachpuff;
+  border-radius: 5px;
+  margin: 20px;
+  background: url(https://i.giphy.com/media/Y8bL4lil6jive/giphy.gif);
+  background-size: cover;
+  background-position: center left 35%;
+  overflow: hidden;
+  transition: transform 0.4s ease-out;
+}
+
+.triangle_text {
+  position: absolute;
+  width: 230px;
+  height: 230px;
+  margin: 0;
+  border-radius: 5px;
+  background-color: rgba(10, 10, 10, 0.5);
+  color: rgb(238, 238, 238);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40pt;
+  top: 230px;
+  transition: transform 0.4s ease-out;
+}
+
+.triangle_gif:hover > .triangle_text {
+    transform: translateY(-230px);
+}
+
+.liz_gif {
+  position: relative;
+  width: 230px;
+  height: 230px;
+  border: 5px solid peachpuff;
+  border-radius: 5px;
+  margin: 20px;
+  background: url(https://media1.tenor.com/images/8916fb273b24594de0a2b2af6b5b028b/tenor.gif?itemid=3532198);
+  background-size: cover;
+  background-position: center left 35%;
+  overflow: hidden;
+  transition: transform 0.4s ease-out;
+}
+
+.liz_text {
+  position: absolute;
+  width: 230px;
+  height: 230px;
+  margin: 0;
+  border-radius: 5px;
+  background-color: rgba(10, 10, 10, 0.5);
+  color: rgb(238, 238, 238);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40pt;
+  top: 230px;
+  transition: transform 0.4s ease-out;
+}
+
+.liz_gif:hover > .liz_text {
+    transform: translateY(-230px);
+}
